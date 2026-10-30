@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f2eb">
+  <meta name="description" content="以鏡頭收藏山林、溪瀑與海上的片刻。">
+  <title>拾光之間 — 個人攝影作品集</title>
+  <style>
+    :root{--paper:#f4f2eb;--ink:#1c2922;--muted:#718078;--line:#d9ddd5;--green:#395b49;--lime:#c9d77b;--white:#fffefa;--serif:"Iowan Old Style","Palatino Linotype","Noto Serif TC",serif;--sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI","Noto Sans TC",sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1240px,calc(100% - 64px));margin:auto}.topbar{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:12px;font-size:14px;font-weight:700;letter-spacing:.09em}.brand-mark{width:28px;height:28px;border:1px solid var(--green);border-radius:50%;display:grid;place-items:center;color:var(--green);font-family:var(--serif);font-size:18px}.nav{display:flex;gap:36px;font-size:12px;letter-spacing:.08em;color:#526158}.nav a:hover{color:var(--green)}.menu{display:none;background:none;border:0;font-size:22px;color:var(--ink)}
+    .hero{padding:42px 0 72px;display:grid;grid-template-columns:.88fr 1.12fr;gap:6.5%;align-items:center;min-height:620px}.eyebrow{display:flex;align-items:center;gap:10px;text-transform:uppercase;letter-spacing:.19em;font-size:10px;color:var(--green);font-weight:700}.eyebrow:before{content:"";width:26px;height:1px;background:var(--green)}h1{font-family:var(--serif);font-size:clamp(52px,7vw,94px);line-height:1.08;letter-spacing:.04em;font-weight:500;margin:25px 0 22px}.hero-copy p{max-width:360px;color:#637169;line-height:2;font-size:14px;letter-spacing:.04em}.hero-link{display:inline-flex;align-items:center;gap:13px;margin-top:28px;padding:13px 0;border-bottom:1px solid var(--green);font-size:12px;letter-spacing:.12em;color:var(--green)}.hero-link span{font-size:17px;transition:transform .2s}.hero-link:hover span{transform:translateX(4px)}.hero-image{height:530px;position:relative}.hero-image img{width:100%;height:100%;object-fit:cover;object-position:center 42%;display:block}.image-note{position:absolute;right:-18px;bottom:22px;background:var(--white);padding:14px 19px;box-shadow:0 6px 30px #18281c1a;font-size:10px;letter-spacing:.12em;color:#66746b}.image-note strong{display:block;color:var(--ink);font-size:12px;margin-bottom:5px;letter-spacing:.06em}
+    .intro-band{background:#e9ece4;border-block:1px solid #dfe3da}.intro-inner{min-height:142px;display:flex;align-items:center;justify-content:space-between;gap:30px}.intro-quote{font-family:var(--serif);font-size:clamp(17px,2vw,24px);line-height:1.7;letter-spacing:.06em;max-width:600px}.stats{display:flex;gap:44px;color:var(--muted);font-size:10px;letter-spacing:.14em;white-space:nowrap}.stats strong{display:block;font-family:var(--serif);font-size:25px;color:var(--green);font-weight:500;letter-spacing:0;margin-bottom:5px}
+    .gallery-section{padding:92px 0 110px}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:34px}.section-kicker{font-size:10px;color:var(--green);letter-spacing:.2em;text-transform:uppercase}.section-head h2{font:500 clamp(34px,4vw,50px)/1.2 var(--serif);letter-spacing:.05em;margin:13px 0 0}.section-sub{font-size:12px;line-height:1.9;color:var(--muted);max-width:250px;text-align:right}.filters{display:flex;gap:9px;margin-bottom:26px;flex-wrap:wrap}.filter{border:1px solid var(--line);background:transparent;color:#67756c;padding:9px 17px;border-radius:99px;font-size:11px;letter-spacing:.08em;cursor:pointer;transition:.2s}.filter:hover,.filter.active{background:var(--green);border-color:var(--green);color:white}.gallery{columns:3;column-gap:18px}.photo{break-inside:avoid;margin:0 0 18px;position:relative;overflow:hidden;background:#dfe3da;cursor:zoom-in}.photo img{display:block;width:100%;height:auto;transition:transform .55s cubic-bezier(.2,.65,.2,1);min-height:170px;object-fit:cover}.photo:hover img{transform:scale(1.035)}.photo figcaption{position:absolute;inset:auto 0 0;padding:38px 17px 15px;background:linear-gradient(transparent,#0c1c17b8);color:white;opacity:0;transition:opacity .25s;font-size:11px;letter-spacing:.1em}.photo:hover figcaption,.photo:focus-within figcaption{opacity:1}.photo[hidden]{display:none}
+    .closing{background:var(--green);color:#eff2e9;padding:58px 0}.closing-inner{display:flex;justify-content:space-between;align-items:center;gap:30px}.closing h2{font:400 30px/1.4 var(--serif);letter-spacing:.08em;margin:0 0 8px}.closing p{color:#c8d3c9;font-size:12px;letter-spacing:.06em;margin:0}.backtop{font-size:11px;letter-spacing:.12em;border-bottom:1px solid #b8c9ba;padding:10px 0;color:#e4eadf}.email-link{color:#f2f4dc;border-bottom:1px solid #b8c9ba;white-space:nowrap}.footer{padding:19px 0;background:#294538;color:#b5c3b9;font-size:10px;letter-spacing:.1em}.footer .wrap{display:flex;justify-content:space-between}
+    .lightbox{position:fixed;inset:0;background:#0b1512f2;z-index:10;display:none;align-items:center;justify-content:center;padding:5vh 7vw}.lightbox.open{display:flex}.lightbox img{max-width:100%;max-height:82vh;object-fit:contain}.lightbox button{position:absolute;background:none;border:0;color:white;cursor:pointer}.lb-close{right:28px;top:22px;font-size:32px}.lb-prev,.lb-next{top:50%;transform:translateY(-50%);font-size:38px;padding:20px}.lb-prev{left:20px}.lb-next{right:20px}.lb-caption{position:absolute;bottom:22px;color:#dce5dd;font-size:12px;letter-spacing:.12em}.lightbox button:focus-visible,.filter:focus-visible,a:focus-visible{outline:2px solid var(--lime);outline-offset:4px}
+    @media(max-width:760px){.wrap{width:min(100% - 36px,560px)}.topbar{height:68px}.nav{display:none;position:absolute;z-index:3;top:68px;left:0;right:0;padding:18px;background:var(--paper);border-bottom:1px solid var(--line);justify-content:center}.nav.open{display:flex}.menu{display:block}.hero{grid-template-columns:1fr;gap:28px;padding:46px 0 48px;min-height:0}.hero-copy{order:0}.hero-image{order:1;height:420px;margin-right:8px}.hero-image img{object-position:center 45%}.image-note{right:-8px}.hero h1{font-size:62px;margin:18px 0}.hero-copy p{font-size:13px}.intro-inner{padding:25px 0;display:block}.stats{margin-top:23px;gap:32px}.gallery-section{padding:68px 0 76px}.section-head{align-items:start;display:block}.section-sub{text-align:left;margin-top:12px}.gallery{columns:2;column-gap:10px}.photo{margin-bottom:10px}.photo img{min-height:110px}.photo figcaption{opacity:1;padding:24px 9px 9px;font-size:9px}.closing-inner{align-items:start;flex-direction:column}.lb-prev{left:0}.lb-next{right:0}.lightbox{padding:8vh 12vw}}
+    @media(max-width:420px){.gallery{columns:1}.photo img{max-height:480px;object-fit:cover}.hero-image{height:350px}.stats{gap:22px}.stats strong{font-size:22px}.footer .wrap{gap:12px;flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <header class="wrap topbar" id="top">
+    <a class="brand" href="#top" aria-label="拾光之間首頁"><span class="brand-mark">拾</span><span>拾光之間</span></a>
+    <nav class="nav" id="nav" aria-label="主要導覽"><a href="#works">作品</a><a href="#about">關於</a><a href="#contact">聯絡</a></nav>
+    <button class="menu" id="menu" aria-label="開啟選單" aria-expanded="false">☰</button>
+  </header>
+  <main>
+    <section class="wrap hero" aria-labelledby="hero-title">
+      <div class="hero-copy"><div class="eyebrow">A quiet collection</div><h1 id="hero-title">拾光<br>之間</h1><p>沿著山徑走，也沿著海風去。<br>把那些不急著離開的片刻，留在影像裡。</p><a class="hero-link" href="#works">瀏覽攝影作品 <span>↗</span></a></div>
+      <div class="hero-image"><img src="IMG_1877.jpg" alt="蔚藍海面上，一群海豚並肩前行"><div class="image-note"><strong>海的方向</strong>BLUE MOMENTS · 01</div></div>
+    </section>
+    <section class="intro-band" id="about"><div class="wrap intro-inner"><div class="intro-quote">「有些風景，值得放慢腳步，<br>等光落下來。」</div><div class="stats"><div><strong>15</strong>張影像</div><div><strong>03</strong>種風景</div><div><strong>∞</strong>次停留</div></div></div></section>
+    <section class="wrap gallery-section" id="works">
+      <div class="section-head"><div><div class="section-kicker">Selected photographs · COLLECTION 01</div><h2>沿途拾景</h2></div><div class="section-sub">從森林深處到潮汐之間<br>每一張，都是一次停下來。</div></div>
+      <div class="filters" role="group" aria-label="依主題篩選作品"><button class="filter active" data-filter="all">全部作品</button><button class="filter" data-filter="waterfall">溪瀑之間</button><button class="filter" data-filter="forest">林間漫步</button><button class="filter" data-filter="ocean">海上相遇</button></div>
+      <div class="gallery" id="gallery">
+        <figure class="photo" data-category="waterfall"><img src="IMG_3028.JPG" alt="綠意環繞的瀑布流入清澈水潭" loading="lazy"><figcaption>溪瀑之間　·　水聲漫過石階</figcaption></figure>
+        <figure class="photo" data-category="forest"><img src="IMG_1912.jpg" alt="抬頭仰望森林裡枝葉交錯的老樹" loading="lazy"><figcaption>林間漫步　·　仰望老樹</figcaption></figure>
+        <figure class="photo" data-category="ocean"><img src="IMG_1873.JPG" alt="海豚躍出藍色海面，濺起白色水花" loading="lazy"><figcaption>海上相遇　·　躍出海面的瞬間</figcaption></figure>
+        <figure class="photo" data-category="waterfall"><img src="IMG_3025.JPG" alt="溪流穿過森林與岩石，前景有柔焦枝葉" loading="lazy"><figcaption>溪瀑之間　·　溪谷的綠</figcaption></figure>
+        <figure class="photo" data-category="forest"><img src="IMG_1910.jpg" alt="陽光穿過樹梢，照亮林間木階" loading="lazy"><figcaption>林間漫步　·　光落在階梯上</figcaption></figure>
+        <figure class="photo" data-category="waterfall"><img src="IMG_3027.JPG" alt="瀑布近景與濕潤的深色岩壁" loading="lazy"><figcaption>溪瀑之間　·　水霧與岩石</figcaption></figure>
+        <figure class="photo" data-category="ocean"><img src="IMG_1877.jpg" alt="海豚群在深藍海面上游動" loading="lazy"><figcaption>海上相遇　·　同一個方向</figcaption></figure>
+        <figure class="photo" data-category="forest"><img src="IMG_1909.jpg" alt="森林小徑上的長階梯往樹林深處延伸" loading="lazy"><figcaption>林間漫步　·　往更深的地方</figcaption></figure>
+        <figure class="photo" data-category="waterfall"><img src="IMG_3026.JPG" alt="瀑布從高處落下，兩側被茂密植物圍繞" loading="lazy"><figcaption>溪瀑之間　·　瀑布上游</figcaption></figure>
+        <figure class="photo" data-category="forest"><img src="IMG_1907.jpg" alt="陽光下細緻透亮的綠葉" loading="lazy"><figcaption>林間漫步　·　葉隙之光</figcaption></figure>
+        <figure class="photo" data-category="ocean"><img src="IMG_1873.JPG" alt="海豚從浪花中躍起" loading="lazy"><figcaption>海上相遇　·　浪花之間</figcaption></figure>
+        <figure class="photo" data-category="waterfall"><img src="IMG_3024.JPG" alt="溪水流過森林裡的岩石與淺灘" loading="lazy"><figcaption>溪瀑之間　·　溪水繞過石頭</figcaption></figure>
+        <figure class="photo" data-category="forest"><img src="IMG_2837.jpg" alt="藍天下的樹冠與層層白雲" loading="lazy"><figcaption>林間漫步　·　樹梢與雲</figcaption></figure>
+        <figure class="photo" data-category="waterfall"><img src="IMG_3022.JPG" alt="水流在石頭間匯聚，形成霧白色溪流" loading="lazy"><figcaption>溪瀑之間　·　流動的白</figcaption></figure>
+        <figure class="photo" data-category="forest"><img src="IMG_0920.JPG" alt="午後陽光照亮一片草木茂盛的山坡" loading="lazy"><figcaption>林間漫步　·　坡地午後</figcaption></figure>
+      </div>
+    </section>
+    <section class="closing" id="contact"><div class="wrap closing-inner"><div><h2>謝謝你，和我一起停留。</h2><p>每一次按下快門，都是一次重新看見。<br>歡迎投稿或分享你的故事：<a class="email-link" href="mailto:wayne0990213@gmail.com">wayne0990213@gmail.com</a></p></div><a class="backtop" href="#top">回到頁首　↑</a></div></section>
+  </main>
+  <footer class="footer"><div class="wrap"><span>拾光之間　·　個人攝影作品集</span><span>COLLECT MOMENTS, NOT THINGS.</span></div></footer>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="照片檢視器"><button class="lb-close" aria-label="關閉">×</button><button class="lb-prev" aria-label="上一張">‹</button><img id="lb-image" alt=""><button class="lb-next" aria-label="下一張">›</button><div class="lb-caption" id="lb-caption"></div></div>
+  <script>
+    const filters=[...document.querySelectorAll('.filter')], cards=[...document.querySelectorAll('.photo')];
+    filters.forEach(button=>button.addEventListener('click',()=>{filters.forEach(b=>b.classList.remove('active'));button.classList.add('active');cards.forEach(card=>card.hidden=button.dataset.filter!=='all'&&card.dataset.category!==button.dataset.filter)}));
+    const menu=document.getElementById('menu'),nav=document.getElementById('nav');menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',open);menu.textContent=open?'×':'☰'});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰'}));
+    const box=document.getElementById('lightbox'),lbImg=document.getElementById('lb-image'),caption=document.getElementById('lb-caption');let current=0;
+    function openAt(index){const visible=cards.filter(c=>!c.hidden);current=(index+visible.length)%visible.length;const card=visible[current];lbImg.src=card.querySelector('img').src;lbImg.alt=card.querySelector('img').alt;caption.textContent=card.querySelector('figcaption').textContent;box.classList.add('open');document.body.style.overflow='hidden';box.querySelector('.lb-close').focus()}
+    function closeBox(){box.classList.remove('open');document.body.style.overflow=''}cards.forEach(card=>card.addEventListener('click',()=>openAt(cards.filter(c=>!c.hidden).indexOf(card))));box.querySelector('.lb-close').addEventListener('click',closeBox);box.querySelector('.lb-prev').addEventListener('click',()=>openAt(current-1));box.querySelector('.lb-next').addEventListener('click',()=>openAt(current+1));box.addEventListener('click',e=>{if(e.target===box)closeBox()});document.addEventListener('keydown',e=>{if(!box.classList.contains('open'))return;if(e.key==='Escape')closeBox();if(e.key==='ArrowLeft')openAt(current-1);if(e.key==='ArrowRight')openAt(current+1)});
+  </script>
+</body>
+</html>
+
+
+
